@@ -5,21 +5,21 @@
 class Simplecli < Formula
   desc "A simple CLI tool to explain automated deployments"
   homepage "https://github.com/marianina8"
-  version "1.0.2-beta"
+  version "1.0.4-beta"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/marianina8/simplecli/releases/download/1.0.2-beta/simplecli_Darwin_x86_64.tar.gz"
-      sha256 "990af8ec2d3f8700c1126393bc4fd842b837e73c8615150ebaae77996e5f445d"
+      url "https://github.com/marianina8/simplecli/releases/download/1.0.4-beta/simplecli_Darwin_x86_64.tar.gz"
+      sha256 "48c2e262d505e20508d338f5f7507cee594645e9bf90ea613d8ebbeba0883bfd"
 
       def install
         bin.install "simplecli"
       end
     end
     on_arm do
-      url "https://github.com/marianina8/simplecli/releases/download/1.0.2-beta/simplecli_Darwin_arm64.tar.gz"
-      sha256 "69b04fc997bae10e67686fb8f8ce26e21b49e552bc3f72260ddbc7ded435af89"
+      url "https://github.com/marianina8/simplecli/releases/download/1.0.4-beta/simplecli_Darwin_arm64.tar.gz"
+      sha256 "c7f19d55a626b00ac62729a3f8c4948f670eda9398ecfd361322da3e83cd532b"
 
       def install
         bin.install "simplecli"
@@ -30,8 +30,8 @@ class Simplecli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marianina8/simplecli/releases/download/1.0.2-beta/simplecli_Linux_x86_64.tar.gz"
-        sha256 "9dfaf25234d17622d3c69257cafae04d3c82a8f7b7f8102442c60ad9319cff2a"
+        url "https://github.com/marianina8/simplecli/releases/download/1.0.4-beta/simplecli_Linux_x86_64.tar.gz"
+        sha256 "7e096befb08e515b4586e91b45ee9ac26326b60bdebbf17f8a033c9a6e940ec3"
 
         def install
           bin.install "simplecli"
@@ -40,8 +40,8 @@ class Simplecli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marianina8/simplecli/releases/download/1.0.2-beta/simplecli_Linux_arm64.tar.gz"
-        sha256 "4901def588f1e9ec422a3f4febc28eb857de8d079fcf80e9aa56a1abde5375da"
+        url "https://github.com/marianina8/simplecli/releases/download/1.0.4-beta/simplecli_Linux_arm64.tar.gz"
+        sha256 "7d187d4bec17d48be16a822d6513edc53b3462b6b98b50b3cbde0ee6de22689a"
 
         def install
           bin.install "simplecli"
